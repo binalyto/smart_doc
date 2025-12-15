@@ -11,8 +11,8 @@ const UserForm = () => {
 
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     mobile: "",
+    city: "",
   });
 
   //   if (!photo) {
@@ -69,22 +69,6 @@ const UserForm = () => {
 
             <div className="space-y-1">
               <label className="block text-sm font-medium text-gray-700">
-                Email Address
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                placeholder="Enter your email address"
-                className="w-full rounded-lg border border-gray-300 px-3 py-2
-                       focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-            <div className="space-y-1">
-              <label className="block text-sm font-medium text-gray-700">
                 Mobile Number
               </label>
               <input
@@ -94,6 +78,22 @@ const UserForm = () => {
                 onChange={handleChange}
                 required
                 placeholder="Enter your mobile number"
+                className="w-full rounded-lg border border-gray-300 px-3 py-2
+                       focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <div className="space-y-1">
+              <label className="block text-sm font-medium text-gray-700">
+               City
+              </label>
+              <input
+                type="city"
+                name="city"
+                value={formData.city}
+                onChange={handleChange}
+                required
+                placeholder="Enter your city"
                 className="w-full rounded-lg border border-gray-300 px-3 py-2
                        focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
