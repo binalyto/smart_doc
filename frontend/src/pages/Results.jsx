@@ -81,20 +81,30 @@ export default function Results() {
           {/* Wellness CTA Banner */}
           <section className="mt-8">
             <div
-              className="w-full bg-linear-to-r from-blue-600 to-blue-500
+              className="relative w-full bg-linear-to-r from-blue-600 to-blue-500
                rounded-2xl p-6 sm:p-8
                flex flex-col sm:flex-row
                items-center justify-between gap-4
                text-white"
             >
+              {/* Offer Badge */}
+              <div
+                className="absolute -top-3 left-4
+        bg-green-500 text-white
+        text-xs font-semibold
+        px-3 py-1 rounded-full
+        shadow"
+              >
+                Special Offer
+              </div>
               {/* Text */}
               <div className="text-center sm:text-left space-y-1">
                 <h3 className="text-lg sm:text-xl font-semibold">
-                  Book a 1-Week Wellness Session
+                  Ayurvedic Wellness Therapy
                 </h3>
                 <p className="text-sm text-blue-100 max-w-md">
-                  Get personalized Ayurvedic guidance and holistic wellness
-                  support based on your scan results.
+                  Rejuvenate your body with a world-famous 1-week Ayurvedic
+                  therapy experience in Kerala.
                 </p>
               </div>
 
