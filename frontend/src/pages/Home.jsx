@@ -13,15 +13,17 @@ const Home = () => {
           {/* Intro Section */}
           <section className="text-center space-y-4">
             <h1 className="text-2xl sm:text-3xl font-semibold text-gray-800">
-              Arya Vaidya Sala, Kottakkal
+              AyurCare Wellness Center
             </h1>
 
             <p className="text-slate-600 leading-relaxed text-sm sm:text-base max-w-3xl mx-auto">
-              Arya Vaidya Sala (AVS) is a 120+ year old charitable institution
-              dedicated to the practice and propagation of Ayurveda — the
-              ancient healthcare system of India. AVS offers authentic Ayurvedic
-              treatments, therapies, and classical medicines to patients from
-              India and across the world.
+              AyurCare Wellness Center is a modern integrative healthcare
+              facility focused on preventive wellness and holistic health
+              assessment. We combine traditional medical principles with digital
+              screening tools to help individuals better understand their health
+              indicators and make informed wellness decisions. Our services are
+              non-invasive, patient-friendly, and designed to support early
+              health awareness and long-term well-being.
             </p>
           </section>
 

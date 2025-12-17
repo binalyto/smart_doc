@@ -9,6 +9,7 @@ import fitnessAppIcon from "../assets/fitness-app.png";
 import lungsIcon from "../assets/lungs.png";
 import oximeterIcon from "../assets/oximeter.png";
 import checkMarkIcon from "../assets/check-mark.png";
+import drySkinIcon from "../assets/dry-skin.png";
 
 export default function Results() {
   const { state } = useLocation();
@@ -63,10 +64,10 @@ export default function Results() {
                 icon={bloodPressureIcon}
               />
               <MetricCard
-                label="Mean RRi"
-                value="997"
-                unit="ms"
-                icon={ecgIcon}
+                label="Dryness"
+                value="48"
+                unit="%"
+                icon={drySkinIcon}
               />
               <MetricCard
                 label="RMSSD"
@@ -74,32 +75,37 @@ export default function Results() {
                 unit="ms"
                 icon={fitnessAppIcon}
               />
-              <MetricCard
-                label="HRV SDNN"
-                value="117"
-                unit="ms"
-                icon={fitnessAppIcon}
-              />
             </div>
           </section>
 
-          {/* Respiratory */}
-          <section>
-            <h2 className="font-semibold mb-3">Respiratory Parameters</h2>
+          {/* Wellness CTA Banner */}
+          <section className="mt-8">
+            <div
+              className="w-full bg-linear-to-r from-blue-600 to-blue-500
+               rounded-2xl p-6 sm:p-8
+               flex flex-col sm:flex-row
+               items-center justify-between gap-4
+               text-white"
+            >
+              {/* Text */}
+              <div className="text-center sm:text-left space-y-1">
+                <h3 className="text-lg sm:text-xl font-semibold">
+                  Book a 1-Week Wellness Session
+                </h3>
+                <p className="text-sm text-blue-100 max-w-md">
+                  Get personalized Ayurvedic guidance and holistic wellness
+                  support based on your scan results.
+                </p>
+              </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
-              <MetricCard
-                label="Respiratory Rate"
-                value="16"
-                unit="bpm"
-                icon={lungsIcon}
-              />
-              <MetricCard
-                label="SpO₂"
-                value="98"
-                unit="%"
-                icon={oximeterIcon}
-              />
+              {/* CTA Button */}
+              <button
+                className="px-6 py-3 bg-white text-blue-600
+                 rounded-xl font-medium
+                 hover:bg-blue-50 transition"
+              >
+                Book Now
+              </button>
             </div>
           </section>
         </div>
